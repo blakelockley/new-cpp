@@ -2,8 +2,25 @@
 #define MY_CLASS_H
 
 class MyClass {
-    public:
+public:
+
+    MyClass();
+
+
     void doStuff();
+
+    int getNum();
+    void setNum(int a);
+
+    void lotsOfArgs(int a, float *b, int c);
+    
+    float getA() { return this-> A; }
+    int &someRef();
+    int *somePtr();
+
+private:
+    int A;
+
 };
 
 #endif
